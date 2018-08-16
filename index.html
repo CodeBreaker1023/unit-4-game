@@ -1,0 +1,76 @@
+<!-- Crystal Collector Game Webpage -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crystal Collector</title>
+    <!-- Linking Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- Google font link -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> 
+</head>
+
+<body>
+    <!-- Crystal Collector Header-->
+    <header id="gameHeader">
+        <div class="row">
+            <div class="col-md 6">   
+                <h1 id="maintitle">CRYSTAL COLLECTOR</h1>
+            </div> 
+            <!-- Game Rules Explained -->
+            <div class="row col-md 6" id="gameRules">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number. You lose the game if your total goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game starts, the values of each crystal will change.</p>
+            </div>
+        </div>
+    </header>
+    <!-- Game container -->
+    <div class="container">
+        <div class="row">
+            <!-- Target score box -->
+            <div class="column" id="targetBox">
+                <h3>Target Score:<span id="target"></span></h3>
+           </div>
+           <!-- Wins Losses counter box -->
+            <div class="column" id="counterBox">
+                <h4>Wins:<span id="wins">0</span></h4>
+                <h4>Losses:<span id="losses">0</span></h4>
+            </div>
+        </div>
+        <!-- Row of crystals -->
+        <div class="row">
+            <!-- blue crystals -->
+            <div class="column">
+                <img class="crystals" src="Assets/images/blue-crystals.jpg" id="blue-crystals" alt="blue-crystals" width:"50px" height="100px">
+            </div>
+            <!-- clear crystals -->
+            <div class="column">
+                <img class="crystals" src="Assets/images/clear-crystals.jpg" id="clear-crystals" alt="clear-crystals" width:"50px" height="100px">
+            </div>
+            <!-- green crystals -->
+            <div class="column">
+                <img class="crystals" src="Assets/images/green-crystals.jpg" id="green-crystals" alt="green-crystals" width:"50px" height="100px">
+            </div>
+            <!-- metal crystals -->
+            <div class="column">
+            <img class="crystals" src="Assets/images/metal-crystals.jpg" id="metal-crystals" alt="metal-crystals" width:"50px" height="100px">
+            </div>
+        </div>
+        <!-- Total score row -->
+        <div class="row">
+            <!-- Total score box-->
+            <div class="column" id="scoreBox">
+                <h3>Total Score: <span id="scoreTotal"></span></h3>
+            </div>
+        </div>       
+    </div>
+    

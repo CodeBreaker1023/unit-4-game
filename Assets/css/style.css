@@ -1,0 +1,62 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    margin: 0px;
+}
+
+header {
+    width: 60%;
+}
+/* Main title box */
+#maintitle {
+    background-color: blue;
+    color: white;
+}
+/* Rules explanation box */
+#gameRules {
+    background-color: peachpuff;
+    color: orangered;
+    font-weight: bold;
+}
+/* Wins Losses box */
+#counterBox {
+    background-color: orange;
+    color: blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+/* Target score box */
+#targetBox {
+    background-color: red;
+    color: peachpuff;
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+/* Basic columns class */
+.column {
+    float: left;
+    width: 5%;
+    height: 5%;
+    margin: 10px 70px 10px 0px;
+}
+/* Columns grid organization */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Crystal Images styling */
+.crystals {
+    border: 2px solid black;
+}
+
+#scoreBox {
+    background-color: seagreen;
+    color: darkblue;
+    width: 200px;
+    height: 100px;
+}
