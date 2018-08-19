@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    width: 60%;
+    width: 30%;
 }
 /* Main title box */
 #maintitle {
@@ -19,6 +19,7 @@ header {
     background-color: peachpuff;
     color: orangered;
     font-weight: bold;
+    margin-top: 10px;
 }
 /* Wins Losses box */
 #counterBox {
@@ -41,7 +42,7 @@ header {
     float: left;
     width: 5%;
     height: 5%;
-    margin: 10px 70px 10px 0px;
+    margin: 10px 40px 10px 0px;
 }
 /* Columns grid organization */
 .row:after {
@@ -53,10 +54,24 @@ header {
 .crystals {
     border: 2px solid black;
 }
-
+/* Total score box */
 #scoreBox {
     background-color: seagreen;
     color: darkblue;
     width: 200px;
     height: 100px;
+}
+
+.sticky-footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 100px;
+    width: 100%;
+    vertical-align: text-bottom;
+    border-top: 5px solid teal;
+    margin: 0px 0px -50px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
